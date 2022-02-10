@@ -1,25 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Jogo da Forca</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div style="text-align:center; margin: 50px 0px;">
-      <h1 class="titulo">Jogo da Forca</h1>
-      <button class="btn" id="iniciar-jogo">INICIAR JOGO</button>
+        <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1.0"
+            />
+            <title>Jogo da Forca</title>
+            <link rel="stylesheet" href="style.css" />
+            
+            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+          </head>
+
+          <body>
+            <main>
+              <header>
+                <img src="./assets/logo.svg" alt="Alura" />
+              </header>
+              <!--inicio -->
+              <div id="inicio" class="tela">
+                <div>
+                  <button class="btn1" id="btn-iniciar">Começar a jogar</button>
+                </div>
+                <div>
+                  <button class="btn2" id="inserir-palavra">
+                    Inserir nova palavra
+                  </button>
+                </div>
+              </div>
+
+              <!-- inserindo  uma nova palavra -->
+
+              <div id="in-palavra" class="tela2 oculta">
+                <div>
+                  <textarea
+                    name="palavra"
+                    id="palavra"
+                    cols="30"
+                    rows="9"
+                    placeholder="Insira uma palavra"
+                  ></textarea>
+                </div>
+                <div>
+                  <button class="btn btn3" id="gravar">Salvar</button>
+                  <button class="btn btn4" id="cancelar">Cancelar</button>
+                </div>
+              </div>
+
+              
+              <div id="jogo" class="tela3 oculta">
+                <div>
+                  <canvas id="forca" height="400px" width="800px"></canvas>
+                </div>
+                <div>
+                  <button class="btn btn3" id="novo-jogo">Novo Jogo</button>
+                  <button class="btn btn4" id="desistir">Desistir</button>
+                </div>
+              </div>
+            </main>
+            <footer>
+              <div class="social grid">
+                <a
+                  href="https://www.linkedin.com/in/tiago-de-oliveira-59648b172/"
+                  target="_blank"
+                >
+                  <i class="icon-linkedin"></i>
+                </a>
+                <a href="https://github.com/TI-1986" target="_blank"
+                  ><i class="icon-github"></i>
+                </a>
+              </div>
+              <div class="brand">
+                <p>©2021 por Tiago de Oliveira</p>
+                <p class="logo">Challenge - Oracle + Alura</p>
+              </div>
+            </footer>
+            <script src="./scripts/script.js"></script>
+            <script src="./scripts/canvas.js"></script>
+            <script src="./scripts/iniciarJogo.js"></script>
+            <script src="./scripts/mostrarLetra.js"></script>
+            <script src="./scripts/validacao.js"></script>
+            <script src="./scripts/vitoriaDerrota.js"></script>
+          </body>
+        </html>
+      </button>
     </div>
-    <div style="text-align:center">
-      <input class="text-input" type="text" id="input-nova-palavra" placeholder="Escreva uma nova palavra">
-      <button class="btn" id="nova-palavra">ADICIONAR PALAVRA</button> 
-    </div>
-    <div style="text-align:center;">
-      <canvas id="forca" height="800px" width="1200px"></canvas>
-    </div>
-    <script type="text/javascript" src="canvas.js"></script>
-    <script type="text/javascript" src="forca.js"></script>
   </body>
 </html>
