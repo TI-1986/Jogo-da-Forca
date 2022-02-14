@@ -91,7 +91,7 @@ window.addEventListener('keydown', element => {
   if (flag && validandoLetra(element.key) && contador < 9) {
     if (!listandoLetras.includes(element.key.toUpperCase())) {
       listandoLetras.push(element.key.toUpperCase())
-      if (!mostrarLetra(element.key.toUpperCase())) {
+      if (!mostarLetra(element.key.toUpperCase())) {
         criarBoneco(contador)
         contador++
       }
