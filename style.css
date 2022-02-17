@@ -4,12 +4,10 @@ body {
   background-color: #e5e5e5;
 }
 
-header {
-  position: absolute;
-  left: 3%;
-  right: 37.43%;
-  top: 5%;
-  bottom: 0%;
+header img {
+  position: relative;
+  left: 2.5rem;
+  top: 2.5rem;
 }
 
 .tela {
@@ -31,8 +29,13 @@ header {
 .tela3 {
   display: flex;
   flex-direction: column;
-  padding: 1%;
   align-items: center;
+
+  position: relative;
+  width: 41rem;
+  height: 0.3rem;
+  left: 21.8rem;
+  top: -5.75rem;
 }
 
 .oculta {
@@ -41,10 +44,10 @@ header {
 
 .btn1 {
   position: absolute;
-  width: 317px;
-  height: 105px;
-  left: 562px;
-  top: 35%;
+  width: 19.8rem;
+  height: 6.3rem;
+  left: 32rem;
+  top: 12rem;
   background-color: #0a3871;
   border: none;
   color: white;
@@ -54,7 +57,7 @@ header {
 
 .btn1:hover {
   background-color: #e5e5e5;
-  border: 1px solid #0a3871;
+  border: 0.06rem solid #0a3871;
   color: #0a3871;
 }
 
@@ -64,13 +67,13 @@ div {
 
 .btn2 {
   position: absolute;
-  width: 317px;
-  height: 102px;
-  left: 562px;
-  top: 394px;
-  border-radius: 20px;
+  width: 19.8rem;
+  height: 6.3rem;
+  left: 32rem;
+  top: 20.5rem;
+  border-radius: 1.25rem;
   background-color: #e5e5e5;
-  border: 1px solid #0a3871;
+  border: 0.06rem solid #0a3871;
   color: #0a3871;
   font-family: 'Inter', sans-serif;
 }
@@ -86,23 +89,28 @@ button:active {
 }
 
 .btn {
-  padding-top: 17px;
-  padding-bottom: 17px;
-  padding-left: 40px;
-  padding-right: 40px;
-  border-radius: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding-top: 1.05rem;
+  padding-bottom: 1.05rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  border-radius: 1.25rem;
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
   font-family: 'Inter', sans-serif;
 }
 
 textarea {
   background-color: transparent;
+  align-items: center;
   border: none;
+  resize: none;
   font-family: 'Inter', sans-serif;
   color: #0a3871;
   font-size: x-large;
   text-transform: uppercase;
+
+  position: relative;
+  right: 3.2rem;
 }
 
 textarea::placeholder {
@@ -110,6 +118,12 @@ textarea::placeholder {
   color: #0a3871;
   font-size: x-large;
   text-transform: none;
+}
+
+textarea:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
 }
 
 .btn:active {
@@ -120,6 +134,9 @@ textarea::placeholder {
   background-color: #0a3871;
   color: white;
   border: none;
+
+  width: 15rem;
+  height: 4rem;
 }
 
 .btn3:hover {
@@ -132,6 +149,9 @@ textarea::placeholder {
   background-color: #e5e5e5;
   border: 1px solid #0a3871;
   color: #0a3871;
+
+  width: 15rem;
+  height: 4rem;
 }
 
 .btn4:hover {
@@ -140,45 +160,98 @@ textarea::placeholder {
   border: none;
 }
 
+.btn5 {
+  background-color: #0a3871;
+  color: white;
+  border: none;
+
+  width: 15rem;
+  height: 4rem;
+}
+
+.btn5:hover {
+  background-color: #e5e5e5;
+  border: 1px solid #0a3871;
+  color: #0a3871;
+}
+
+.btn6 {
+  background-color: #e5e5e5;
+  border: 1px solid #0a3871;
+  color: #0a3871;
+
+  width: 15rem;
+  height: 4rem;
+}
+
+.btn6:hover {
+  background-color: #0a3871;
+  color: white;
+  border: none;
+}
+
+label {
+  font-family: 'inter', sans-serif;
+  color: #0a3871;
+  font-size: 0.7rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+
+  position: absolute;
+  width: 9.7rem;
+  height: 1.15rem;
+  left: 28.2rem;
+  top: 23rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+
+  position: absolute;
+  width: 9.7rem;
+  height: 1.15rem;
+  left: 22.5rem;
+  top: 23rem;
+}
+
 footer {
   position: fixed;
   background-color: #e5e5e5;
   bottom: 0;
-  width: 100%;
-  padding: 5px 0px;
+  width: 98%;
+  padding: 0.3rem 0rem;
   text-align: center;
   font-size: x-large;
   color: #0a3871;
-  margin-top: 10px;
+  margin-top: 0.6rem;
   font-family: 'Inter', sans-serif;
   justify-content: center;
 }
 
-.section {
-  position: relative !important;
-}
-
 footer .brand p {
   font-family: 'inter', sans-serif;
+  font-size: 1.1rem;
   color: #0a3871;
   margin-bottom: 0.75rem;
   line-height: 0.5rem;
 }
 
-footer .logo {
-  font-weight: bold;
-  margin-left: 0.6rem;
-}
-
-footer i {
+footer .grid i {
   font-size: 1.5rem;
-  color: #0a3871;
+  color: #407cff;
   padding: 0.2rem;
 }
 
 footer .social {
   grid-auto-flow: column;
-  width: fit-content;
+  width: auto;
+  height: 1rem;
   margin: 1rem 4rem 1rem 5rem;
 }
 

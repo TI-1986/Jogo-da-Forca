@@ -23,6 +23,7 @@ let listaDePalavras = [
   'CSS',
   'GITHUB'
 ]
+
 let palavra = document.querySelector('#palavra')
 let borda = document.querySelector('canvas')
 let pincel = forca.getContext('2d')

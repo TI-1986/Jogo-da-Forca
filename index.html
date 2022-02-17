@@ -9,8 +9,13 @@
             />
             <title>Jogo da Forca</title>
             <link rel="stylesheet" href="style.css" />
-            
+
+            <!--icons-->
+            <link rel="stylesheet" href="assets/fonts/style.css" />
+            <!--Alerts ** personalizados-->
+
             <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
           </head>
 
           <body>
@@ -25,7 +30,7 @@
                 </div>
                 <div>
                   <button class="btn2" id="inserir-palavra">
-                    Inserir nova palavra
+                    Adicionar nova palavra
                   </button>
                 </div>
               </div>
@@ -35,16 +40,19 @@
               <div id="in-palavra" class="tela2 oculta">
                 <div>
                   <textarea
+                  type="text"
                     name="palavra"
                     id="palavra"
                     cols="30"
                     rows="9"
-                    placeholder="Insira uma palavra"
+                    placeholder="Digite uma palavra ou frase"
                   ></textarea>
                 </div>
                 <div>
-                  <button class="btn btn3" id="gravar">Salvar</button>
-                  <button class="btn btn4" id="cancelar">Cancelar</button>
+                  <img src="./assets/info.svg "  class="info" alt="simbolo de exclamação!">
+                  <label for="info"> Maximo de 8 Letras</label>
+                  <button class="btn btn3" id="gravar" >Salvar e começar</button>
+                  <button class="btn btn4" id="cancelar"  >Cancelar</button>
                 </div>
               </div>
 
@@ -54,12 +62,12 @@
                   <canvas id="forca" height="400px" width="800px"></canvas>
                 </div>
                 <div>
-                  <button class="btn btn3" id="novo-jogo">Novo Jogo</button>
-                  <button class="btn btn4" id="desistir">Desistir</button>
+                  <button class="btn btn5" id="novo-jogo">Novo Jogo</button>
+                  <button class="btn btn6" id="desistir">Desistir</button>
                 </div>
               </div>
             </main>
-            <footer>
+            <footer >
               <div class="social grid">
                 <a
                   href="https://www.linkedin.com/in/tiago-de-oliveira-59648b172/"
