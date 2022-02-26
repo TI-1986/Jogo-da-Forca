@@ -13,9 +13,13 @@ header img {
 .tela {
   display: flex;
   flex-direction: column;
-  padding: 1%;
   align-items: center;
-  margin: 7%;
+  position: absolute;
+  width: 100%;
+  max-width: 1920px;
+  height: 50rem;
+  left: auto;
+  right: 10rem;
 }
 
 .tela2 {
@@ -23,19 +27,19 @@ header img {
   flex-direction: column;
   padding: 1%;
   align-items: center;
-  margin: 3%;
+
+  width: 100%;
+  max-width: 95rem;
+  height: 5rem;
 }
 
 .tela3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  position: relative;
-  width: 41rem;
-  height: 0.3rem;
-  left: 21.8rem;
-  top: -5.75rem;
+  position: absolute;
+  width: 100%;
+  max-width: 97rem;
 }
 
 .oculta {
@@ -46,12 +50,13 @@ header img {
   position: absolute;
   width: 19.8rem;
   height: 6.3rem;
-  left: 32rem;
+  left: auto;
   top: 12rem;
+
   background-color: #0a3871;
   border: none;
   color: white;
-  border-radius: 24px;
+  border-radius: 1.5rem;
   font-family: 'Inter', sans-serif;
 }
 
@@ -69,11 +74,12 @@ div {
   position: absolute;
   width: 19.8rem;
   height: 6.3rem;
-  left: 32rem;
+  left: auto;
   top: 20.5rem;
-  border-radius: 1.25rem;
+
   background-color: #e5e5e5;
   border: 0.06rem solid #0a3871;
+  border-radius: 1.25rem;
   color: #0a3871;
   font-family: 'Inter', sans-serif;
 }
@@ -111,6 +117,8 @@ textarea {
 
   position: relative;
   right: 3.2rem;
+  width: 90%;
+  margin: 2rem 0rem 0rem 2rem;
 }
 
 textarea::placeholder {
@@ -147,7 +155,7 @@ textarea:focus {
 
 .btn4 {
   background-color: #e5e5e5;
-  border: 1px solid #0a3871;
+  border: 0.05rem solid #0a3871;
   color: #0a3871;
 
   width: 15rem;
@@ -198,38 +206,39 @@ label {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
 
-  position: absolute;
-  width: 9.7rem;
+  position: relative;
+  width: 100%;
+  max-width: 9.7rem;
   height: 1.15rem;
-  left: 28.2rem;
-  top: 23rem;
+  left: 3rem;
+  top: -1rem;
 }
 
 .info {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
 
   position: absolute;
-  width: 9.7rem;
+  width: 100%;
+  max-width: 9.7rem;
   height: 1.15rem;
-  left: 22.5rem;
-  top: 23rem;
+  left: 30rem;
+  top: 23.3rem;
 }
 
 footer {
   position: fixed;
   background-color: #e5e5e5;
   bottom: 0;
-  width: 98%;
+  width: 100%;
+  max-width: 100%;
   padding: 0.3rem 0rem;
   text-align: center;
   font-size: x-large;
   color: #0a3871;
-  margin-top: 0.6rem;
+
   font-family: 'Inter', sans-serif;
   justify-content: center;
 }
@@ -263,4 +272,17 @@ footer .social a {
 
 footer .social a:hover {
   transform: translateY(-8px);
+}
+
+@media (max-width: 768px) {
+  .tela {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    max-width: 768px;
+    height: 50rem;
+    left: auto;
+  }
 }
