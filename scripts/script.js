@@ -13,71 +13,7 @@ let inPalavra = document.querySelector('#in-palavra')
 let jogo = document.querySelector('#jogo')
 let footer = document.querySelector('footer')
 
-let listaDePalavras = [
-  'corrida',
-  'serrote',
-  'marreco',
-  'barriga',
-  'bezerro',
-  'goleiro',
-  'cadeira',
-  'xarope',
-  'colorido',
-  'amarelo',
-  'passaro',
-  'assobio',
-  'bussola',
-  'pessoa',
-  'assinado',
-  'visita',
-  'aviso',
-  'defesa',
-  'mesada',
-  'chinelo',
-  'chocolate',
-  'mochila',
-  'chupeta',
-  'galocha',
-  'galinha',
-  'caminho',
-  'minhoca',
-  'sonho',
-  'moinho',
-  'abelha',
-  'telhado',
-  'joelho',
-  'atalho',
-  'martelo',
-  'regador',
-  'formiga',
-  'cartola',
-  'borboleta',
-  'caderno',
-  'escova',
-  'pistola',
-  'vestido',
-  'biscoito',
-  'ansioso',
-  'necessidade',
-  'licenca',
-  'suspense',
-  'subsidio',
-  'consenso',
-  'discussao',
-  'execucao',
-  'exceto',
-  'estender',
-  'hesitar',
-  'concessao',
-  'excecao',
-  'ascensao',
-  'obsessao',
-  'excesso',
-  'vicissitude',
-  'escassez',
-  'rescisao',
-  'pretexto'
-]
+let listaDePalavras = ['alura', 'oracle']
 
 let palavra = document.querySelector('#palavra')
 let borda = document.querySelector('canvas')
@@ -171,7 +107,7 @@ window.addEventListener('keydown', element => {
     swal(
       'Você Venceu!',
       'Clique em novo jogo se você quiser jogar novamente.',
-      'Parabens!'
+      'success'
     )
   }
 })

@@ -18,7 +18,7 @@ function mostarLetra(letra) {
   }
   if (indicador == 0) {
     pincel.beginPath()
-    pincel.fillStyle = '#0A3871'
+    pincel.fillStyle = '#560309'
     pincel.font = "bold 50px 'Inter'"
     pincel.fillText(letra, 255 + 60 * contadorLetraError, 390)
     contadorLetraError++

@@ -59,7 +59,7 @@ function criarBoneco(counter) {
       `A palavra era: "${jogarPlv.join(
         ''
       )}", clique em novo jogo se você quiser jogar novamente.`,
-      'info'
+      'error'
     )
     return counter
   } else {
