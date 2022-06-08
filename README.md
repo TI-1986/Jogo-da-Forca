@@ -8,7 +8,7 @@
     
   </a>
     <a aria-label="Dias" href="https://github.com/TI-1986/Jogo-da-Forca">
-    <img src="https://img.shields.io/badge/Dia-1%20de%20365-blue"></img>
+    <img src="https://img.shields.io/badge/Dia-1%20de%365-blue"></img>
   </a>
   
   <a aria-label="Repo Size" href="README.md">
@@ -24,7 +24,7 @@ Here is a list of technlogies (at least what I remeber) that I used to develop t
 
 ## 🚀 Projeto
 
-#### O CriptoOne é um projeto para Criptografar e descriptografar textos.
+#### O jogo criado durante o segundo challenge da Alura.
 
 ## Frontend
 
